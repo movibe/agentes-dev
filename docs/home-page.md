@@ -23,9 +23,13 @@
 
 - Título principal com destaque
 - Descrição do projeto
+- Fundo com gradiente animado:
+  - Cores claras: primary -> blue -> indigo -> primary
+  - Cores escuras: gray -> indigo -> blue -> gray
+  - Animação suave de 15 segundos
 - Botões de call-to-action:
-  - Ver Templates
-  - Explorar Editores
+  - Ver Templates (botão primário)
+  - Explorar Editores (botão outline)
 
 ### Featured Templates
 
@@ -41,6 +45,10 @@
 - Cores personalizadas:
   - Primary: #0070f3
   - Secondary: #1a1a1a
+- Animações:
+  - Gradiente de fundo no Hero
+  - Transições suaves nos botões
+  - Hover states interativos
 
 ## Próximos Passos
 

@@ -2,6 +2,24 @@
 
 Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 
+## [0.3.0] - 2024-02-14
+
+### Adicionado
+
+- Página de registro de usuários
+- Componente de input reutilizável
+- Validação de formulários com Zod
+- Integração com React Hook Form
+- Documentação da página de registro
+
+## [0.2.1] - 2024-02-14
+
+### Adicionado
+
+- Gradiente animado no Hero section
+- Animações suaves nos botões
+- Melhorias visuais na seção inicial
+
 ## [0.2.0] - 2024-02-14
 
 ### Adicionado

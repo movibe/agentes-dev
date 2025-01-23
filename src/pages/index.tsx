@@ -8,7 +8,7 @@ const featuredTemplates = [
     editor: 'VS Code',
     technologies: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     likes: 42,
-    imageUrl: '/templates/nextjs.png'
+    imageUrl: '/templates/default.jpg'
   },
   {
     title: 'React Native Expo',
@@ -16,7 +16,7 @@ const featuredTemplates = [
     editor: 'VS Code',
     technologies: ['React Native', 'Expo', 'TypeScript'],
     likes: 35,
-    imageUrl: '/templates/react-native.png'
+    imageUrl: '/templates/default.jpg'
   },
   {
     title: 'Node.js API',
@@ -24,7 +24,7 @@ const featuredTemplates = [
     editor: 'VS Code',
     technologies: ['Node.js', 'Express', 'TypeScript'],
     likes: 28,
-    imageUrl: '/templates/nodejs.png'
+    imageUrl: '/templates/default.jpg'
   }
 ]
 
@@ -32,14 +32,15 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 animated-gradient dark:animated-gradient-dark opacity-90 dark:opacity-40" />
+        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
               <span className="block">Crie seus projetos com</span>
-              <span className="block text-primary">Templates Personalizados</span>
+              <span className="block">Templates Personalizados</span>
             </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-500 dark:text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            <p className="mt-3 max-w-md mx-auto text-base text-white text-opacity-80 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               Selecione diferentes editores de código e tecnologias para criar seus agentes personalizados.
               Comece seus projetos mais rápido com templates pré-configurados.
             </p>
@@ -47,7 +48,7 @@ export default function Home() {
               <div className="rounded-md shadow">
                 <a
                   href="/templates"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
                 >
                   Ver Templates
                 </a>
@@ -55,7 +56,7 @@ export default function Home() {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="/editores"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white/10 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
                 >
                   Explorar Editores
                 </a>

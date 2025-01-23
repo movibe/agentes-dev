@@ -1,6 +1,7 @@
 import { HeartIcon } from '@heroicons/react/24/outline'
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
+import { useState } from 'react'
 
 interface TemplateCardProps {
   title: string
@@ -21,16 +22,21 @@ export default function TemplateCard({
   likes,
   isLiked = false,
   onLike,
-  imageUrl = '/placeholder.png',
+  imageUrl,
 }: TemplateCardProps) {
+  const [imgError, setImgError] = useState(false)
+  const defaultImage = '/templates/default.jpg'
+
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-      <div className="relative h-48">
+      <div className="relative h-48 bg-gray-100 dark:bg-gray-700">
         <Image
-          src={imageUrl}
+          src={imgError ? defaultImage : (imageUrl || defaultImage)}
           alt={title}
           fill
           className="object-cover"
+          onError={() => setImgError(true)}
+          priority={true}
         />
       </div>
       <div className="p-6">
