@@ -2,11 +2,23 @@
 
 Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 
+## [0.2.0] - 2024-02-14
+
+### Adicionado
+
+- Componente de Layout base
+- Navbar responsiva com suporte a tema escuro
+- Footer com links e informações do projeto
+- Componente TemplateCard para exibição de templates
+- Hero section na página inicial
+- Seção de templates em destaque
+- Documentação da página inicial
+
 ## [0.1.0] - 2024-02-14
 
 ### Adicionado
 
-- Estrutura inicial do projeto.
+- Estrutura inicial do projeto
 - Configuração do TypeScript com tsconfig.json
 - Configuração do ESLint com .eslintrc.js
 - Configuração do Tailwind CSS
