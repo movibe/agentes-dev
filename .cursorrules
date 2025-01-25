@@ -1,5 +1,5 @@
 {
-    "project_context": "Este é um sistema para cadastro de templates de projetos, permitindo que os usuários selecionem diferentes editores de código e tecnologias para a criação de agentes personalizados.",
+    "project_context": "This is a system for registering project templates, allowing users to select different code editors and technologies for creating custom agents.",
     "coding_standards": {
         "language": "TypeScript",
         "framework": "Next.js",
@@ -7,49 +7,50 @@
         "state_management": "Zustand",
         "data_fetching": "React Query",
         "conventions": {
-            "components": "Utilizar componentes funcionais com hooks.",
-            "variables": "Nomenclatura em camelCase.",
-            "components_names": "Nomenclatura em PascalCase."
+            "components": "Use functional components with hooks.",
+            "variables": "Use camelCase naming.",
+            "components_names": "Use PascalCase naming."
         }
     },
     "preferred_libraries": {
-        "routing": "Next.js roteamento padrão.",
-        "forms": "React Hook Form para manipulação de formulários.",
-        "icons": "Heroicons para ícones."
+        "routing": "Next.js default routing.",
+        "forms": "React Hook Form for form handling.",
+        "icons": "Heroicons for icons."
     },
     "file_structure": {
-        "components": "src/components - Componentes reutilizáveis da interface.",
-        "pages": "src/pages - Páginas principais do aplicativo.",
-        "styles": "src/styles - Arquivos de estilização.",
-        "store": "src/store - Gerenciamento de estado com Zustand.",
-        "services": "src/services - Funções para comunicação com o backend."
+        "components": "src/components - Reusable interface components.",
+        "pages": "src/pages - Main application pages.",
+        "styles": "src/styles - Styling files.",
+        "store": "src/store - State management with Zustand.",
+        "services": "src/services - Functions for backend communication."
     },
     "performance_guidelines": {
-        "code_splitting": "Implementar carregamento dinâmico para componentes pesados.",
-        "memoization": "Utilizar React.memo e useMemo para otimização.",
-        "data_fetching": "Gerenciar cache de dados com React Query."
+        "code_splitting": "Implement dynamic loading for heavy components.",
+        "memoization": "Use React.memo and useMemo for optimization.",
+        "data_fetching": "Manage data cache with React Query."
     },
     "testing_requirements": {
-        "framework": "Jest com React Testing Library.",
-        "coverage": "Almejar 90% de cobertura de testes.",
-        "types": "Incluir testes unitários e de integração."
+        "framework": "Jest with React Testing Library.",
+        "coverage": "Aim for 90% test coverage.",
+        "types": "Include unit and integration tests."
     },
     "documentation_guidelines": {
-        "comments": "Adicionar comentários JSDoc em todas as funções e componentes.",
-        "readme": "Manter o README.md atualizado com instruções de uso e desenvolvimento.",
-        "changelog": "Registrar mudanças significativas no CHANGELOG.md."
+        "comments": "Add JSDoc comments to all functions and components.",
+        "readme": "Keep README.md updated with usage and development instructions.",
+        "changelog": "Record significant changes in CHANGELOG.md."
     },
     "error_handling": {
-        "frontend": "Implementar boundaries de erro para capturar exceções em componentes.",
-        "backend": "Tratar erros de API com mensagens amigáveis ao usuário.",
-        "logging": "Integrar serviço de monitoramento para registro de erros (ex: Sentry)."
+        "frontend": "Implement error boundaries to catch exceptions in components.",
+        "backend": "Handle API errors with user-friendly messages.",
+        "logging": "Integrate monitoring service for error logging (e.g., Sentry)."
     },
-    "language_preference": "Português",
-    "response_style": "Objetivo, detalhado e com humor",
+    "language_preference": "English",
+    "response_style": "Objective, detailed and with humor",
     "documentation": {
         "enabled": true,
         "format": "Markdown",
         "location": "docs",
-        "frequency": "A cada etapa concluída"
+        "frequency": "At each completed stage",
+        "language": "English"
     }
 }

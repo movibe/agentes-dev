@@ -1,52 +1,52 @@
-# Página de Registro
+# Registration Page
 
-## Componentes Criados
+## Created Components
 
 ### Form
 
-- `Input.tsx`: Componente de input reutilizável com suporte a:
+- `Input.tsx`: Reusable input component with support for:
   - Label
-  - Validação de erros
-  - Tema claro/escuro
-  - Estilização customizada
+  - Error validation
+  - Light/dark theme
+  - Custom styling
 
 ### Schemas
 
-- `auth.ts`: Schema de validação usando Zod para:
-  - Nome (min: 3, max: 50 caracteres)
-  - Email (formato válido)
-  - Senha (min: 8 caracteres, maiúscula, minúscula e número)
-  - Confirmação de senha
+- `auth.ts`: Validation schema using Zod for:
+  - Name (min: 3, max: 50 characters)
+  - Email (valid format)
+  - Password (min: 8 characters, uppercase, lowercase, and number)
+  - Password confirmation
 
-## Funcionalidades
+## Features
 
-### Formulário de Registro
+### Registration Form
 
-- Validação em tempo real dos campos
-- Feedback visual de erros
-- Estado de loading durante submissão
-- Integração com React Hook Form e Zod
+- Real-time field validation
+- Visual error feedback
+- Loading state during submission
+- Integration with React Hook Form and Zod
 
-### Autenticação Social
+### Social Authentication
 
-- Botão de login com GitHub (preparado para integração com Supabase)
-- Separador visual entre formulário e autenticação social
+- GitHub login button (prepared for Supabase integration)
+- Visual separator between form and social authentication
 
-## Estilização
+## Styling
 
-- Design responsivo
-- Suporte a tema claro/escuro
-- Feedback visual nos estados:
+- Responsive design
+- Light/dark theme support
+- Visual feedback for states:
   - Hover
   - Focus
   - Error
   - Loading
-- Consistência com a identidade visual do projeto
+- Consistency with project visual identity
 
-## Próximos Passos
+## Next Steps
 
-1. Implementar integração com Supabase Auth
-2. Adicionar mais provedores de autenticação social
-3. Criar página de login
-4. Implementar redirecionamento após autenticação
-5. Adicionar testes unitários e de integração
+1. Implement Supabase Auth integration
+2. Add more social authentication providers
+3. Create login page
+4. Implement post-authentication redirection
+5. Add unit and integration tests

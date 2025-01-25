@@ -1,59 +1,59 @@
-# Página Inicial
+# Home Page
 
-## Componentes Criados
+## Created Components
 
 ### Layout
 
-- `Layout.tsx`: Componente base que envolve todas as páginas
-- `Navbar.tsx`: Barra de navegação responsiva com menu mobile
-- `Footer.tsx`: Rodapé com informações e links úteis
+- `Layout.tsx`: Base component that wraps all pages
+- `Navbar.tsx`: Responsive navigation bar with mobile menu
+- `Footer.tsx`: Footer with information and useful links
 
 ### Templates
 
-- `TemplateCard.tsx`: Card para exibição de templates com suporte a:
-  - Imagem de capa
-  - Título e descrição
-  - Editor utilizado
-  - Tecnologias (tags)
-  - Sistema de curtidas
+- `TemplateCard.tsx`: Card for displaying templates with support for:
+  - Cover image
+  - Title and description
+  - Used editor
+  - Technologies (tags)
+  - Like system
 
-## Estrutura da Página Inicial
+## Home Page Structure
 
 ### Hero Section
 
-- Título principal com destaque
-- Descrição do projeto
-- Fundo com gradiente animado:
-  - Cores claras: primary -> blue -> indigo -> primary
-  - Cores escuras: gray -> indigo -> blue -> gray
-  - Animação suave de 15 segundos
-- Botões de call-to-action:
-  - Ver Templates (botão primário)
-  - Explorar Editores (botão outline)
+- Main title with highlight
+- Project description
+- Animated gradient background:
+  - Light colors: primary -> blue -> indigo -> primary
+  - Dark colors: gray -> indigo -> blue -> gray
+  - Smooth 15-second animation
+- Call-to-action buttons:
+  - View Templates (primary button)
+  - Explore Editors (outline button)
 
 ### Featured Templates
 
-- Seção com templates em destaque
-- Grid responsivo de cards
-- Dados mockados para demonstração
+- Section with featured templates
+- Responsive card grid
+- Mocked data for demonstration
 
-## Estilização
+## Styling
 
-- Utilização do Tailwind CSS
-- Suporte a tema claro/escuro
-- Design responsivo
-- Cores personalizadas:
+- Using Tailwind CSS
+- Light/dark theme support
+- Responsive design
+- Custom colors:
   - Primary: #0070f3
   - Secondary: #1a1a1a
-- Animações:
-  - Gradiente de fundo no Hero
-  - Transições suaves nos botões
-  - Hover states interativos
+- Animations:
+  - Background gradient in Hero
+  - Smooth button transitions
+  - Interactive hover states
 
-## Próximos Passos
+## Next Steps
 
-1. Implementar sistema de autenticação
-2. Criar página de listagem completa de templates
-3. Desenvolver página de detalhes do template
-4. Adicionar funcionalidade de curtir templates
-5. Implementar sistema de busca e filtros
+1. Implement authentication system
+2. Create complete template listing page
+3. Develop template details page
+4. Add template like functionality
+5. Implement search and filter system

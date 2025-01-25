@@ -1,91 +1,103 @@
-# Instruções para Criação do Projeto
+# Project Creation Instructions
 
-Este documento fornece diretrizes detalhadas para a criação de um sistema de cadastro de templates de projetos, permitindo que os usuários selecionem diferentes editores de código e tecnologias para a criação de agentes personalizados. O projeto será desenvolvido utilizando Next.js, Tailwind CSS, Zustand e React Query no front-end, com Supabase para autenticação e banco de dados no back-end.
+This document provides detailed guidelines for creating a project template registration system, allowing users to select different code editors and technologies for creating custom agents. The project will be developed using Next.js, Tailwind CSS, Zustand, and React Query on the front-end, with Supabase for authentication and database on the back-end.
 
-## 1. Configuração do Ambiente de Desenvolvimento
+## 1. Development Environment Setup
 
-- **Next.js**: Framework React que facilita a renderização do lado do servidor e a geração de sites estáticos.
+- **Next.js**: React framework that facilitates server-side rendering and static site generation.
 
-- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
+- **Tailwind CSS**: Utility-first CSS framework for rapid and responsive styling.
 
-- **Zustand**: Biblioteca leve para gerenciamento de estado em React.
+- **Zustand**: Lightweight state management library for React.
 
-- **React Query**: Biblioteca para gerenciamento de estados assíncronos e cache de dados de servidor.
+- **React Query**: Library for asynchronous state management and server data caching.
 
-- **Supabase**: Plataforma que fornece serviços de autenticação e banco de dados em tempo real.
+- **Supabase**: Platform providing real-time authentication and database services.
 
-## 2. Estrutura do Projeto
+## 2. Project Structure
 
-### 2.1. Página Inicial
+### 2.1. Home Page
 
-- **Catálogo de Templates**: Exibir uma lista de templates com filtros por editor de código, tecnologias (React, Tailwind, Node) e número de curtidas.
+- **Main Layout**:
 
-- **Opção de Cadastro**: Permitir que os usuários se cadastrem utilizando autenticação via GitHub.
+  - Fixed left sidebar for filters
+  - Responsive main content area
 
-- **Detalhes do Projeto**: Fornecer informações sobre o funcionamento e objetivos do projeto.
+- **Filter Sidebar**:
 
-- **Espaços para Anúncios**: Reservar áreas para possíveis anúncios ou parcerias.
+  - Technology filters (React, Node.js, etc.)
+  - IDE filters (VSCode, WebStorm, etc.)
+  - Sort by likes count
+  - Reset/clear filters option
 
-- **Interação com Templates**: Permitir que os usuários curtam e comentem em cada template.
+- **Main Area**:
 
-### 2.2. Cadastro de Usuário
+  - Responsive template grid
+  - Cards with preview and basic information
+  - Results pagination
 
-- **Autenticação**: Utilizar o Supabase para autenticação via GitHub.
+- **Template Catalog**: Display a list of templates with filters by code editor, technologies (React, Tailwind, Node) and likes count.
 
-- **Informações Adicionais**: Solicitar nome e e-mail durante o processo de cadastro.
+- **Registration Option**: Allow users to register using GitHub authentication.
 
-### 2.3. Cadastro de Template
+- **Project Details**: Provide information about the project's functionality and objectives.
 
-- **Seleção de Editor de Código**: Permitir que o usuário escolha ou cadastre um novo editor de código.
+- **Ad Spaces**: Reserve areas for possible advertisements or partnerships.
 
-- **Criação/Edição de Template**:
+- **Template Interaction**: Allow users to like and comment on each template.
 
-  - **Cadastro de Perguntas**: Incluir perguntas que auxiliarão na geração de instruções para diferentes projetos.
+### 2.2. User Registration
 
-  - **Geração de Instruções**: Com base nas respostas, gerar instruções específicas para cada tipo de projeto.
+- **Authentication**: Use Supabase for GitHub authentication.
 
-## 3. Tecnologias Utilizadas
+- **Additional Information**: Request name and email during registration process.
+
+### 2.3. Template Registration
+
+- **Code Editor Selection**: Allow users to choose or register a new code editor.
+
+- **Template Creation/Editing**:
+  - **Question Registration**: Include questions that will help generate instructions for different projects.
+  - **Instruction Generation**: Based on answers, generate specific instructions for each project type.
+
+## 3. Technologies Used
 
 - **Front-end**:
 
-  - **Next.js**: Para estruturação e roteamento das páginas.
-
-  - **Tailwind CSS**: Para estilização moderna e responsiva.
-
-  - **Zustand**: Para gerenciamento de estado de forma simples e eficiente.
-
-  - **React Query**: Para gerenciamento de dados assíncronos e cache.
+  - **Next.js**: For page structuring and routing.
+  - **Tailwind CSS**: For modern and responsive styling.
+  - **Zustand**: For simple and efficient state management.
+  - **React Query**: For asynchronous data management and caching.
 
 - **Back-end**:
+  - **Supabase**: For authentication and real-time database.
 
-  - **Supabase**: Para autenticação e banco de dados em tempo real.
+## 4. Coding Standards
 
-## 4. Padrões de Codificação
+- **Linter**: Configure ESLint to maintain code consistency and quality.
 
-- **Linter**: Configurar o ESLint para manter a consistência e qualidade do código.
+- **Code Style**: Follow best coding practices, including consistent naming and file organization.
 
-- **Estilo de Código**: Seguir as melhores práticas de codificação, incluindo nomenclatura consistente e organização de arquivos.
+## 5. Styling
 
-## 5. Estilização
+- **Layout**: Develop a modern and responsive design using Tailwind CSS.
 
-- **Layout**: Desenvolver um design moderno e responsivo utilizando Tailwind CSS.
+- **Themes**: Implement light and dark theme options for better user experience.
 
-- **Temas**: Implementar opções de tema claro e escuro para melhor experiência do usuário.
+## 6. Documentation
 
-## 6. Documentação
+- **Comments**: Add clear and concise code comments to facilitate understanding.
 
-- **Comentários**: Adicionar comentários claros e concisos no código para facilitar o entendimento.
+- **Documentation Files**: Maintain an updated README.md with usage and development instructions.
 
-- **Arquivos de Documentação**: Manter um arquivo README.md atualizado com instruções de uso e desenvolvimento.
+## 7. Error Handling
 
-## 7. Tratamento de Erros
+- **Front-end**: Implement error boundaries to catch component exceptions.
 
-- **Front-end**: Implementar boundaries de erro para capturar exceções em componentes.
+- **Back-end**: Handle API errors with user-friendly messages.
 
-- **Back-end**: Tratar erros de API com mensagens amigáveis ao usuário.
+- **Monitoring**: Integrate error monitoring service (e.g., Sentry).
 
-- **Monitoramento**: Integrar serviço de monitoramento para registro de erros (ex: Sentry).
+## 8. Final Considerations
 
-## 8. Considerações Finais
-
-Seguindo estas diretrizes, o desenvolvimento do sistema será alinhado com as melhores práticas, garantindo uma aplicação robusta, eficiente e de fácil manutenção.
+Following these guidelines, the system development will be aligned with best practices, ensuring a robust, efficient, and maintainable application.

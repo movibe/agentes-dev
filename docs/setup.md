@@ -1,6 +1,6 @@
-# Configuração Inicial do Projeto
+# Initial Project Setup
 
-## Estrutura de Arquivos
+## File Structure
 
 ```
 agentes-dev/
@@ -21,7 +21,7 @@ agentes-dev/
 └── tsconfig.json
 ```
 
-## Dependências Principais
+## Main Dependencies
 
 - Next.js 14.1.0
 - React 18.2.0
@@ -31,28 +31,28 @@ agentes-dev/
 - React Query 5.0.0
 - Supabase JS 2.39.0
 
-## Configurações
+## Configurations
 
 ### TypeScript
 
-- Configurado com suporte a paths para importações absolutas
-- Strict mode habilitado
-- Suporte a JSX preservado
+- Configured with path support for absolute imports
+- Strict mode enabled
+- JSX support preserved
 
 ### ESLint
 
 - Extends Next.js core web vitals
-- Regras TypeScript configuradas
-- Hooks rules ativadas
+- TypeScript rules configured
+- Hooks rules enabled
 
 ### Tailwind CSS
 
-- Configurado para processar arquivos em src/
-- Tema customizado com cores primárias e secundárias
-- Suporte a dark mode via classe
+- Configured to process files in src/
+- Custom theme with primary and secondary colors
+- Dark mode support via class
 
-## Próximos Passos
+## Next Steps
 
-1. Instalar dependências com `pnpm install`
-2. Iniciar o servidor de desenvolvimento com `pnpm dev`
-3. Começar a desenvolver os componentes e páginas
+1. Install dependencies with `pnpm install`
+2. Start development server with `pnpm dev`
+3. Begin developing components and pages
